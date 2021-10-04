@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Formulario HTML</title>
+    </head>
+    <body>
+        <div id="container">
+        <h2>CADASTRO DE ALUNOS</h2>
+        <form>
+            <label id="name">
+                <span>Nome:</span>
+                <input type="text" name="name" id="name" placeholder="Nome Completo" required><br>
+            </label>
+
+            <label id="email">
+                <span>E-mail:</span>
+                <input type="email" name="name" id="email" placeholder="Ex: nomedoaluno@gmail.com" required><br>
+            </label>
+
+            <label id="datanascimento">
+                <span>Data de Nascimento:</span>
+                <input type="date" name="name" id="datanascimento" required><br>
+            </label>
+
+            <label id="turma">
+                <span>Turma:</span>
+                <select name="turma" id="turma" required>
+                    <option>Selecione</option>
+                    <option value="TurmaA">Turma A</option>
+                    <option value="TurmaB">Turma B</option>
+                </select>
+            </label><br>
+
+            <span>Solicitar Passe Livre ?</span><br>
+            <label id="sim">
+            <input type="radio" id="sim" name="passelivre" value="sim" required>Sim</label>
+               
+            <labeL id="nao">    
+            <input type="radio" id="nao" name="passelivre" value="nao" required>Não</labeL><br>
+                
+           
+
+            
+            <span>Escolaridade:</span><br>
+            <label id="fundamentalcompleto">
+            <input type="radio" id="fundamentalcompleto" name="escolaridade" value="fundamentalcompleto" required>
+            Ensino Fundamental Completo</label>
+
+            <label id="mediocursando">
+            <input type="radio" id="mediocursando" name="escolaridade" value="mediocursando" required>
+            Ensino Medio - Cursando</label>
+
+            <label id="mediocompleto">
+            <input type="radio" id="mediocompleto" name="escolaridade" value="mediocompleto" required>
+            Ensino Medio completo</label><br><br>
+
+            <span>Descrição:</span><br>
+            <textarea required></textarea><br><br>
+
+            <input type="submit" value="Cadastar Aluno" name="cadastraraluno">
+            
+        </form>
+        </div>
+    </body>
+</html>
